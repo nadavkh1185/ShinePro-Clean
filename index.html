@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShinePro Clean | PT Bersih Utama Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .hero-bg {
+        background-image:
+          linear-gradient(rgba(34, 197, 94, 0.84), rgba(16, 185, 129, 0.84)),
+          url("https://images.unsplash.com/photo-1581578017428-fbde6ba3d1cc?auto=format&fit=crop&w=1600&q=80");
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-b from-emerald-50 via-white to-emerald-100 text-slate-900"
+  >
+    <div class="min-h-screen">
+      <header
+        class="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm"
+      >
+        <div
+          class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6"
+        >
+          <a href="#home" class="flex items-center gap-3">
+            <div
+              class="flex h-11 w-11 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-700 ring-1 ring-emerald-200"
+            >
+              <span class="text-lg font-bold">S</span>
+            </div>
+            <div>
+              <p
+                class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-700"
+              >
+                ShinePro Clean
+              </p>
+              <p class="text-xs text-slate-600">PT Bersih Utama Indonesia</p>
+            </div>
+          </a>
+
+          <nav
+            class="hidden items-center gap-8 text-sm font-medium text-slate-700 md:flex"
+          >
+            <a href="#about" class="transition hover:text-emerald-800"
+              >Tentang</a
+            >
+            <a href="#services" class="transition hover:text-emerald-800"
+              >Layanan</a
+            >
+            <a href="#advantages" class="transition hover:text-emerald-800"
+              >Keunggulan</a
+            >
+            <a href="#testimonials" class="transition hover:text-emerald-800"
+              >Testimoni</a
+            >
+          </nav>
+
+          <div class="flex items-center gap-3">
+            <a
+              href="#contact"
+              class="hidden rounded-full border border-emerald-200 bg-emerald-50 px-5 py-3 text-sm font-semibold text-emerald-900 transition hover:bg-emerald-100 md:inline-flex"
+              >Booking Sekarang</a
+            >
+            <button
+              id="menu-toggle"
+              class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:bg-emerald-50 md:hidden"
+              aria-label="Buka menu mobile"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="mobile-menu"
+          class="mx-auto hidden max-w-6xl px-4 pb-4 md:hidden sm:px-6"
+        >
+          <nav
+            class="grid gap-3 rounded-3xl border border-emerald-100 bg-white/90 p-4 shadow-lg text-slate-700 font-medium"
+          >
+            <a href="#about" class="rounded-full px-4 py-3 hover:bg-emerald-50"
+              >Tentang</a
+            >
+            <a
+              href="#services"
+              class="rounded-full px-4 py-3 hover:bg-emerald-50"
+              >Layanan</a
+            >
+            <a
+              href="#advantages"
+              class="rounded-full px-4 py-3 hover:bg-emerald-50"
+              >Keunggulan</a
+            >
+            <a
+              href="#testimonials"
+              class="rounded-full px-4 py-3 hover:bg-emerald-50"
+              >Testimoni</a
+            >
+            <a
+              href="#contact"
+              class="rounded-full px-4 py-3 hover:bg-emerald-50"
+              >Kontak</a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <section
+        class="hero-bg min-h-[70vh] flex items-center pt-24 pb-10 sm:min-h-[80vh] sm:pt-28"
+      >
+        <div class="mx-auto max-w-6xl px-4 py-12 text-white sm:px-6 lg:py-16">
+          <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+            <div>
+              <span
+                class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm text-emerald-100 ring-1 ring-white/20"
+                >Professional Cleaning Company</span
+              >
+              <h1
+                class="mt-6 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
+              >
+                Solusi Kebersihan Profesional untuk Rumah & Kantor Anda
+              </h1>
+              <p class="mt-6 max-w-xl text-lg leading-8 text-emerald-100/90">
+                Layanan kebersihan terpercaya dengan tenaga profesional dan
+                peralatan modern untuk menciptakan lingkungan yang bersih,
+                nyaman, dan sehat.
+              </p>
+              <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+                <a
+                  href="#contact"
+                  class="inline-flex w-full items-center justify-center rounded-full bg-emerald-500 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-emerald-500/30 transition hover:bg-emerald-600 sm:w-auto"
+                  >Hubungi Kami</a
+                >
+                <a
+                  href="#services"
+                  class="inline-flex w-full items-center justify-center rounded-full border border-white/70 bg-white/10 px-8 py-4 text-base font-semibold text-white transition hover:bg-white/20 sm:w-auto"
+                  >Booking Sekarang</a
+                >
+              </div>
+              <p class="mt-8 text-sm text-emerald-100/80 max-w-md">
+                Konsultasikan kebutuhan kebersihan Anda sekarang.
+              </p>
+            </div>
+            <div
+              class="relative overflow-hidden rounded-[2rem] border border-white/20 bg-white/10 shadow-2xl shadow-slate-900/10"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80"
+                alt="Cleaning service"
+                class="h-full min-h-[260px] w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <main class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <section
+          id="about"
+          class="scroll-mt-24 sm:scroll-mt-28 grid gap-10 lg:grid-cols-2 lg:items-center"
+        >
+          <div>
+            <p
+              class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-700"
+            >
+              Tentang Perusahaan
+            </p>
+            <h2 class="mt-4 text-3xl font-bold text-slate-900 sm:text-4xl">
+              PT Bersih Utama Indonesia - ShinePro Clean
+            </h2>
+            <p class="mt-6 text-lg leading-8 text-slate-700">
+              ShinePro Clean adalah perusahaan jasa kebersihan profesional yang
+              berfokus pada solusi menyeluruh untuk rumah, kantor, dan properti
+              bisnis. Kami menggabungkan tenaga terlatih, prosedur higienis, dan
+              peralatan modern untuk memastikan setiap ruang menjadi lebih
+              bersih, lebih aman, dan lebih nyaman.
+            </p>
+            <div class="mt-8 grid gap-4 sm:grid-cols-2">
+              <div
+                class="rounded-3xl bg-emerald-50 p-6 shadow-sm ring-1 ring-emerald-100"
+              >
+                <h3 class="text-lg font-semibold text-emerald-900">Alamat</h3>
+                <p class="mt-3 text-slate-600">
+                  Jl. Raya Sudirman No. 88, Jakarta Selatan
+                </p>
+              </div>
+              <div
+                class="rounded-3xl bg-emerald-50 p-6 shadow-sm ring-1 ring-emerald-100"
+              >
+                <h3 class="text-lg font-semibold text-emerald-900">Kontak</h3>
+                <p class="mt-3 text-slate-600">hello@shineproclean.id</p>
+                <p class="text-slate-600">0811-1234-5678</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="relative overflow-hidden rounded-[2rem] bg-emerald-100 p-6 shadow-lg shadow-emerald-200/80"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1516912482773-580c7cded9c8?auto=format&fit=crop&w=1000&q=80"
+              alt="Company cleaning image"
+              class="h-full w-full rounded-3xl object-cover"
+            />
+          </div>
+        </section>
+
+        <section id="services" class="scroll-mt-24 sm:scroll-mt-28 mt-24">
+          <div class="text-center">
+            <p
+              class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-700"
+            >
+              Layanan Kami
+            </p>
+            <h2 class="mt-4 text-3xl font-bold text-slate-900 sm:text-4xl">
+              Solusi kebersihan lengkap untuk semua kebutuhan
+            </h2>
+            <p class="mx-auto mt-4 max-w-2xl text-slate-600">
+              Pilih jenis layanan yang paling sesuai dengan kondisi dan anggaran
+              Anda. Semua layanan kami dilakukan dengan standar kualitas yang
+              ketat.
+            </p>
+          </div>
+          <div class="mt-12 grid gap-6 md:grid-cols-3">
+            <article
+              class="rounded-3xl border border-emerald-100 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <div
+                class="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-500 text-white shadow-md shadow-emerald-500/20"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 6h16M4 10h16M4 14h16M4 18h16"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-6 text-xl font-semibold text-slate-900">
+                General Cleaning
+              </h3>
+              <p class="mt-4 text-slate-600">
+                Pembersihan rutin untuk rumah atau kantor dengan fokus pada area
+                umum, debu, dan sanitasi.
+              </p>
+            </article>
+            <article
+              class="rounded-3xl border border-emerald-100 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <div
+                class="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-500 text-white shadow-md shadow-emerald-500/20"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-6 text-xl font-semibold text-slate-900">
+                Deep Cleaning
+              </h3>
+              <p class="mt-4 text-slate-600">
+                Pembersihan menyeluruh untuk area yang sulit dijangkau, noda
+                membandel, dan sanitasi mendalam.
+              </p>
+            </article>
+            <article
+              class="rounded-3xl border border-emerald-100 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <div
+                class="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-500 text-white shadow-md shadow-emerald-500/20"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-8 w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 7h16M4 12h10M4 17h16"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-6 text-xl font-semibold text-slate-900">
+                Cuci Sofa & Karpet
+              </h3>
+              <p class="mt-4 text-slate-600">
+                Perawatan kain dan permukaan empuk untuk sofa, karpet, dan alas
+                lainnya dengan teknik profesional.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section
+          id="advantages"
+          class="scroll-mt-24 sm:scroll-mt-28 mt-24 bg-emerald-50 rounded-[2rem] px-6 py-12 shadow-lg shadow-emerald-200/50"
+        >
+          <div class="text-center">
+            <p
+              class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-700"
+            >
+              Keunggulan Perusahaan
+            </p>
+            <h2 class="mt-4 text-3xl font-bold text-slate-900 sm:text-4xl">
+              Apa yang membuat ShinePro Clean berbeda
+            </h2>
+          </div>
+          <div class="mt-10 grid gap-6 md:grid-cols-3">
+            <div
+              class="rounded-3xl bg-white p-8 text-center shadow-sm ring-1 ring-emerald-100"
+            >
+              <div
+                class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-500 text-white"
+              >
+                <span class="text-2xl">👷</span>
+              </div>
+              <h3 class="mt-6 text-xl font-semibold text-slate-900">
+                Tim Profesional
+              </h3>
+              <p class="mt-4 text-slate-600">
+                Tim terlatih dengan sertifikat kebersihan dan pengalaman kerja
+                pada proyek residential dan komersial.
+              </p>
+            </div>
+            <div
+              class="rounded-3xl bg-white p-8 text-center shadow-sm ring-1 ring-emerald-100"
+            >
+              <div
+                class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-500 text-white"
+              >
+                <span class="text-2xl">⏱️</span>
+              </div>
+              <h3 class="mt-6 text-xl font-semibold text-slate-900">
+                Tepat Waktu
+              </h3>
+              <p class="mt-4 text-slate-600">
+                Jadwal layanan terorganisir dan kedatangan tepat waktu untuk
+                menghormati alur kerja Anda.
+              </p>
+            </div>
+            <div
+              class="rounded-3xl bg-white p-8 text-center shadow-sm ring-1 ring-emerald-100"
+            >
+              <div
+                class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-500 text-white"
+              >
+                <span class="text-2xl">⚙️</span>
+              </div>
+              <h3 class="mt-6 text-xl font-semibold text-slate-900">
+                Peralatan Modern
+              </h3>
+              <p class="mt-4 text-slate-600">
+                Menggunakan mesin dan produk pembersih terbaru untuk hasil
+                bersih maksimal dan aman.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="testimonials" class="scroll-mt-24 sm:scroll-mt-28 mt-24">
+          <div class="text-center">
+            <p
+              class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-700"
+            >
+              Testimoni
+            </p>
+            <h2 class="mt-4 text-3xl font-bold text-slate-900 sm:text-4xl">
+              Ulasan pelanggan yang puas
+            </h2>
+          </div>
+          <div class="mt-12 grid gap-6 md:grid-cols-2">
+            <blockquote
+              class="rounded-[2rem] border border-emerald-100 bg-white p-8 shadow-sm"
+            >
+              <p class="text-slate-700">
+                “ShinePro Clean merubah ruang kantor kami menjadi lebih rapi dan
+                segar dalam waktu singkat. Timnya sangat profesional dan
+                hasilnya luar biasa.”
+              </p>
+              <footer class="mt-6 text-sm text-slate-500">
+                — Rina, Manajer Operasional
+              </footer>
+            </blockquote>
+            <blockquote
+              class="rounded-[2rem] border border-emerald-100 bg-white p-8 shadow-sm"
+            >
+              <p class="text-slate-700">
+                “Layanan cuci sofa dan karpet mereka membuat ruang tamu kami
+                tampak seperti baru lagi. Sangat rekomendasi untuk jasa
+                kebersihan yang terpercaya.”
+              </p>
+              <footer class="mt-6 text-sm text-slate-500">
+                — Farhan, Pemilik Rumah
+              </footer>
+            </blockquote>
+          </div>
+        </section>
+
+        <section
+          id="contact"
+          class="scroll-mt-24 sm:scroll-mt-28 mt-24 rounded-[2rem] bg-emerald-700 px-6 py-14 text-white shadow-2xl shadow-emerald-900/20"
+        >
+          <div class="mx-auto max-w-5xl text-center">
+            <p
+              class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200"
+            >
+              Hubungi Kami
+            </p>
+            <h2 class="mt-4 text-3xl font-bold sm:text-4xl">
+              Siap membantu kebutuhan kebersihan Anda kapan saja
+            </h2>
+            <p class="mt-4 text-slate-100/90">
+              Tanyakan paket layanan, jadwalkan kunjungan, atau konsultasikan
+              soal kebersihan properti Anda dengan tim ShinePro Clean.
+            </p>
+            <div
+              class="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center"
+            >
+              <a
+                href="https://wa.me/6281112345678"
+                target="_blank"
+                class="inline-flex w-full items-center justify-center rounded-full bg-white px-8 py-4 text-base font-semibold text-emerald-800 shadow-lg shadow-emerald-900/20 transition hover:bg-slate-100 sm:w-auto"
+                >WhatsApp Sekarang</a
+              >
+              <a
+                href="mailto:hello@shineproclean.id"
+                class="inline-flex w-full items-center justify-center rounded-full border border-white/80 bg-white/10 px-8 py-4 text-base font-semibold text-white transition hover:bg-white/20 sm:w-auto"
+                >Kirim Email</a
+              >
+            </div>
+            <div class="mt-12 grid gap-6 sm:grid-cols-3">
+              <div class="rounded-3xl bg-white/10 p-6">
+                <p class="text-sm uppercase tracking-[0.24em] text-emerald-200">
+                  Telepon
+                </p>
+                <p class="mt-3 text-lg font-semibold">0811-1234-5678</p>
+              </div>
+              <div class="rounded-3xl bg-white/10 p-6">
+                <p class="text-sm uppercase tracking-[0.24em] text-emerald-200">
+                  Email
+                </p>
+                <p class="mt-3 text-lg font-semibold">hello@shineproclean.id</p>
+              </div>
+              <div class="rounded-3xl bg-white/10 p-6">
+                <p class="text-sm uppercase tracking-[0.24em] text-emerald-200">
+                  Alamat
+                </p>
+                <p class="mt-3 text-lg font-semibold">
+                  Jl. Raya Sudirman No. 88, Jakarta Selatan
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuToggle?.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
